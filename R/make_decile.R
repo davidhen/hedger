@@ -16,10 +16,6 @@ make_decile <- function(rank) {
     stop("There are values outside the possible number of Scottish datazones")
   }
 
-  if(!(is.numeric(rank)) | !(is.integer(rank)) ~ !(is.double(rank))) {
-    stop("The rank variable must be of type double, numerical or integer")
-  }
-
 x <- rlang::exprs(
     rank %in% c(1:697) ~ "1",
     rank %in% c(698:1395) ~ "2",
