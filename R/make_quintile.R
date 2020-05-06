@@ -12,19 +12,7 @@
 
 make_quintile <- function(rank) {
 
-  if (!(rank %in% 1:6976)) {
-    stop("There are values outside the possible number of Scottish datazones")
-  }
-
-  if(!(is.numeric(rank)) | !(is.integer(rank)) ~ !(is.double(rank))) {
-    stop("The rank variable must be of type double, numerical or integer")
-  }
-
-  if (anyDuplicated(rank) == TRUE) {
-    warning("There are duplicated values in the ranking, check the contributing values")
-  }
-
-  x <- rlang::exprs(
+    x <- rlang::exprs(
     rank %in% c(1:1395) ~ "1",
     rank %in% c(1396:2790) ~ "2",
     rank %in% c(2791:4185) ~ "3",
