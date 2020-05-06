@@ -12,10 +12,6 @@
 
 make_decile <- function(rank) {
 
-  if (!(rank %in% 1:6976)) {
-    stop("There are values outside the possible number of Scottish datazones")
-  }
-
 x <- rlang::exprs(
     rank %in% c(1:697) ~ "1",
     rank %in% c(698:1395) ~ "2",
