@@ -4,10 +4,10 @@
 \alias{make_decile}
 \title{Make Decile}
 \usage{
-make_decile(rnk)
+make_decile(rank)
 }
 \arguments{
-\item{rnk}{A numerical vector of information with values between 1 and 6976 (usually a column in a dataset)}
+\item{rank}{A numerical vector of information with values between 1 and 6976 (usually a column in a dataset)}
 }
 \value{
 Returns the value of \code{arg1}

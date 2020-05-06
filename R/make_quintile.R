@@ -2,7 +2,7 @@
 #'
 #' `make_quintile` is a helper function for working with Scottish Index of Multiple Deprivation (SIMD) data. The Scottish Government released data provides domain ranks for each datazone but does not allocate these to quintiles. This function makes it easy to do this.
 #'
-#' @param rnk A numerical vector of information with values between 1 and 6976 (usually a column in a dataset)
+#' @param rank A numerical vector of information with values between 1 and 6976 (usually a column in a dataset)
 #' @return Returns the value of \code{arg1}
 #' @examples
 #'

@@ -2,4 +2,5 @@
 
 export("%>%")
 export(make_decile)
+export(make_quintile)
 importFrom(magrittr,"%>%")
