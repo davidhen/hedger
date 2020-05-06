@@ -19,3 +19,5 @@ Imports:
     magrittr
 Suggests: 
     testthat
+URL: https://github.com/davidhen/hedger
+BugReports: https://github.com/davidhen/hedger/issues
