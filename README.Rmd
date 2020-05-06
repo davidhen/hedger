@@ -1,0 +1,32 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# hedger
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of hedger is to ...
+
+## Installation
+
+You can install the released version of hedger from [GitHub](https://github.com) with:
+
+``` r
+devtools::install_github("davidhen/hedger")
+```
+
+## Example
+

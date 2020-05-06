@@ -1,0 +1,21 @@
+Package: hedger
+Title: David Henderson's utility functions
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "David",
+           family = "Henderson",
+           role = c("aut", "cre"),
+           email = "daibhaidh.hen@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0002-4411-8532"))
+Description: A collection of utlility functions that I find useful when analysing data. These are usually applicable to Scottish and UK administrative data sources.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Imports: 
+    rlang,
+    dplyr,
+    magrittr
+Suggests: 
+    testthat
