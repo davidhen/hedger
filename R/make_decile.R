@@ -13,19 +13,16 @@
 make_decile <- function(rank) {
 
 x <- rlang::exprs(
-    rank %in% c(1:697) ~ "1",
-    rank %in% c(698:1395) ~ "2",
-    rank %in% c(1396:2092) ~ "3",
-    rank %in% c(2093:2790) ~ "4",
-    rank %in% c(2791:3488) ~ "5",
-    rank %in% c(3489:4185) ~ "6",
-    rank %in% c(4186:4883) ~ "7",
-    rank %in% c(4884:5580) ~ "8",
-    rank %in% c(5581:6278) ~ "9",
-    rank %in% c(6279:6976) ~ "10")
-
-  y <- dplyr::case_when(!!! x)
-
-  return(y)
+    rank >= 1 & rank <= 697      ~ "1",
+    rank >= 698 & rank <= 1395   ~ "2",
+    rank >= 1396 & rank <= 2092  ~ "3",
+    rank >= 2093 & rank <= 2790  ~ "4",
+    rank >= 2791 & rank <= 3488  ~ "5",
+    rank >= 3489 & rank <= 4185  ~ "6",
+    rank >= 4186 & rank <= 4883  ~ "7",
+    rank >= 4884 & rank <= 5580  ~ "8",
+    rank >= 5581 & rank <= 6278  ~ "9",
+    rank >= 6279 & rank <= 6976  ~ "10")
+ <- dplyr::case_when(!!! x)  return(y)
 
 }

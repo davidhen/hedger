@@ -13,13 +13,12 @@
 make_quintile <- function(rank) {
 
     x <- rlang::exprs(
-    rank %in% c(1:1395) ~ "1",
-    rank %in% c(1396:2790) ~ "2",
-    rank %in% c(2791:4185) ~ "3",
-    rank %in% c(4186:5580) ~ "4",
-    rank %in% c(5581:6976) ~ "5")
-
-  y <- dplyr::case_when(!!! x)
+    rank >= 1 & rank <= 1395     ~ "1",
+    rank >= 1396 & rank <= 2790  ~ "2",
+    rank >= 2791 & rank <= 4185  ~ "3",
+    rank >= 4186 & rank <= 5580  ~ "4",
+    rank >= 5581 & rank <= 6976  ~ "5")
+ <- dplyr::case_when(!!! x)
 
   return(y)
 
