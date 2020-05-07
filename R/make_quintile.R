@@ -18,7 +18,9 @@ make_quintile <- function(rank) {
     rank >= 2791 & rank <= 4185  ~ "3",
     rank >= 4186 & rank <= 5580  ~ "4",
     rank >= 5581 & rank <= 6976  ~ "5")
- <- dplyr::case_when(!!! x)
+
+
+    y <- dplyr::case_when(!!! x)
 
   return(y)
 

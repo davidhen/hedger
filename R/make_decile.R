@@ -23,6 +23,9 @@ x <- rlang::exprs(
     rank >= 4884 & rank <= 5580  ~ "8",
     rank >= 5581 & rank <= 6278  ~ "9",
     rank >= 6279 & rank <= 6976  ~ "10")
- <- dplyr::case_when(!!! x)  return(y)
+
+    y <- dplyr::case_when(!!! x)
+
+    return(y)
 
 }
